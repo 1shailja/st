@@ -91,7 +91,6 @@ const App: React.FC = () => {
 
   return (
     <div className="flex min-h-screen bg-orange-50 text-gray-800">
-      {/* Sidebar */}
       <aside className="w-72 bg-orange-600 fixed h-full hidden md:flex flex-col">
         <div className="p-8">
           <h1 className="text-3xl font-extrabold text-white">
@@ -124,7 +123,6 @@ const App: React.FC = () => {
         </div>
       </aside>
 
-      {/* Main */}
       <main className="flex-1 md:ml-72 p-6">
         {currentView === AppView.TASKS && (
           <TaskList todos={todos} setTodos={setTodos} />
